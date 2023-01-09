@@ -1,0 +1,66 @@
+body{
+    margin:auto;
+    padding: 10px;
+    border: 5px black solid;
+    border-radius: 3px;
+    width: 60%;
+    height: 60%;
+}
+#head:hover{
+    box-shadow: 3px 4px 3px 2px black;
+}
+*::selection{
+    background-color: black;
+    color: white;
+}
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+#initial{
+    display: inline-block;
+    border: 2px black dotted;
+    border-radius: 2px;
+    background: lightgrey;
+    font-size: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 5px;
+    transform: translatex(400px);
+}
+form > button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+nav form{
+    display: inline;
+}
+
+.homeabout{
+    text-align: left;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+form > button{
+    height: 30px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px black solid;
+    border-radius: 2px;
+}
+h1{
+    text-align: left;
+    letter-spacing: 10px;
+    font-size: 50px;
+    font-weight: 800;
+    border: 2px grey dotted;
+    border-radius: 2px;
+}
+.about{
+    letter-spacing: 2px;
+    font-size: 30px;
+    border: 2px grey dotted;
+    border-radius: 2px;
+}

@@ -1,0 +1,43 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+*::selection{
+    background: black;
+    color: white;
+}
+#movie{
+    color:grey;
+}
+body{
+    margin:auto;
+    padding: 10px;
+    border: 5px black solid;
+    border-radius: 3px;
+    width: 60%;
+    height: 60%;
+}
+form > button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+nav form{
+    display: inline;
+}
+form > button{
+    height: 30px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px black solid;
+    border-radius: 2px;
+}
+h1{
+    font-size: 40px;
+}
+p{
+    border: 2px grey dotted;
+    border-radius: 2px;
+    font-size: 25px;
+    font-weight: 700;
+}

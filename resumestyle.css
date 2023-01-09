@@ -1,0 +1,87 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+form{
+    display: inline-block;
+}
+#name{
+    font-size: 40px;
+}
+*::selection{
+    background: black;
+    color: white;
+}
+
+h2{
+    text-decoration: black underline ;
+}
+form > button{
+    height: 30px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px black solid;
+    border-radius: 2px;
+}
+form > button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+body{
+    border:5px black solid;
+    margin: auto;
+    padding: 1em;
+    width: 80%;
+    height: 80%;
+}
+nav li{
+    font-size: 17px;
+}
+body > div,nav{
+    border: 3px black dotted;
+    margin: 1em;
+    padding: 2em;
+}
+body>div:hover,nav:hover{
+    box-shadow: 3px 3px 2px 2px black;
+}
+div > div{
+    border: 2px black dotted;
+    margin: 1em;
+    padding: 1em;
+    font-size: 16px;
+    font-weight:700;
+}
+#experience{
+    display: inline-block;
+    width: 50%;
+    height: 60%;
+}
+#education{
+    display: inline-block;
+    transform: translateY(-15.5em);
+    width: 30%;
+    height: 70%;
+}
+nav{
+
+    display: inline-block;
+    width: 30%;
+    height: 50%;
+    font-weight: 600;
+
+}
+#summary{
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#top{
+    border: 2px black dotted;
+    padding: 1em;
+    margin: 1em;
+}
