@@ -1,6 +1,9 @@
 *{
     font-family: 'Courier New', Courier, monospace;
 }
+#head{
+    font-size: 45px;
+}
 form{
     display: inline-block;
 }
