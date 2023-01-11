@@ -10,6 +10,9 @@ body{
 #head:hover{
     box-shadow: 3px 4px 3px 2px black;
 }
+#prop{
+    text-decoration: line-through black solid;
+}
 *::selection{
     background-color: black;
     color: white;
