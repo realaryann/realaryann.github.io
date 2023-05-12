@@ -9,14 +9,27 @@
     color:grey;
 }
 body{
-    margin:auto;
-    padding: 10px;
-    border: 5px black solid;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    border-radius: 3px;
+    cursor:crosshair;
+    margin: auto;
+    background-color: rgb(27, 27, 27);
+    border:7px white solid;
+    border-radius: 5px;
+    box-shadow: white 0px 15px 15px, white 0px -6px 20px, white 0px 2px 4px, white 0px 7px 7px, white 0px -3px 5px;
     width: 60%;
     height: 60%;
 }
+h1{
+    border-bottom: 3px black solid;
+}
+#main{
+    margin:auto;
+    padding: 10px;
+    border: 5px black solid;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 3px;
+}
+
 form > button:hover{
     background-color: black;
     color: white;
@@ -39,6 +52,11 @@ h1{
 p{
     border: 2px grey dotted;
     border-radius: 2px;
+    padding:0.5em;
     font-size: 25px;
     font-weight: 700;
+}
+
+p:hover{
+    box-shadow: 0px 0px 3px 3px black;
 }
