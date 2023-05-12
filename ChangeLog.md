@@ -11,3 +11,4 @@ Change Log
 -> [2] Changed on-hover shadows upon selecting a box on the website</br>
 -> [3] Made the overall look more streamlined by using noir contrasts throughout each page.</br>
 -> [4] The background of each page is now black and new outer white border introduced.</br>
+-> [5] Added new blog navigation bar on all pages, content to be added in future releases. </br>
