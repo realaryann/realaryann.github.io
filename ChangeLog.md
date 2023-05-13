@@ -1,4 +1,4 @@
-Change Log
+<h1>Change Log</h1>
 
 -> Added outer box shadow to all main content boxes across all webpages.</br>
 -> Deleted Line Decoration on Resume</br>
@@ -13,3 +13,4 @@ Change Log
 -> [4] The background of each page is now black and new outer white border introduced.</br>
 -> [5] Added new blog navigation bar on all pages, content to be added in future releases. </br>
 -> [6] Changed the mouse pointer to a crosshair while on the main content of the page, otherwise cursor.</br>
+-> [7] Added Favicon for each page</br>
