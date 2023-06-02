@@ -14,3 +14,4 @@
 -> [5] Added new blog navigation bar on all pages, content to be added in future releases. </br>
 -> [6] Changed the mouse pointer to a crosshair while on the main content of the page, otherwise cursor.</br>
 -> [7] Added Favicon for each page</br>
+-> Replaced old data and added new data in the resume section</br>
