@@ -1,0 +1,41 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    cursor:crosshair;
+    margin: auto;
+    background-color: rgb(27, 27, 27);
+    border:7px white solid;
+    border-radius: 5px;
+    box-shadow: white 0px 15px 15px, white 0px -6px 20px, white 0px 2px 4px, white 0px 7px 7px, white 0px -3px 5px;
+    width: 60%;
+    height: 60%;
+}
+
+h1{
+    font-size: 40px;
+    border-bottom: 3px black solid;
+}
+
+#boxer{
+    background-color: white;
+}
+
+form > button{
+    height: 30px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px black solid;
+    border-radius: 2px;
+}
+form > button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+nav form{
+    display: inline;
+}

@@ -57,7 +57,7 @@ nav li{
     font-size: 17px;
 }
 body > div,nav{
-    border: 3px black dotted;
+    border: 2px black dotted;
     margin: 1em;
     padding: 2em;
 }
@@ -78,9 +78,9 @@ div > div{
 }
 #education{
     display: inline-block;
-    transform: translateY(-15.5em);
+    transform: translateY(-9em);
     width: 30%;
-    height: 70%;
+    height: 50%;
 }
 nav{
 
