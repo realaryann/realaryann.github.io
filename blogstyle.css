@@ -6,8 +6,8 @@ body{
     cursor:crosshair;
     margin: auto;
     background-color: rgb(27, 27, 27);
-    border:7px white solid;
-    border-radius: 5px;
+    border:10px white solid;
+    border-radius: 3px;
     box-shadow: white 0px 15px 15px, white 0px -6px 20px, white 0px 2px 4px, white 0px 7px 7px, white 0px -3px 5px;
     width: 60%;
     height: 60%;
@@ -19,7 +19,10 @@ h1{
 }
 
 #boxer{
+
     background-color: white;
+    border:5px black solid;
+    padding:5px;
 }
 
 form > button{
