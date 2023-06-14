@@ -12,6 +12,11 @@ body{
     width: 60%;
     height: 60%;
 }
+#info1,#info1head{
+    border: black 2px solid;
+    padding:5px;
+    font-size: 20px;
+}
 
 h1{
     font-size: 40px;

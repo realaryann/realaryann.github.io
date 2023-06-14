@@ -78,7 +78,7 @@ div > div{
 }
 #education{
     display: inline-block;
-    transform: translateY(-9em);
+    transform: translateY(-5em);
     width: 30%;
     height: 50%;
 }
