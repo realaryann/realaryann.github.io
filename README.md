@@ -18,3 +18,6 @@ Personal Website hosted on Github Pages to track my Software Engineering journey
 -> [6] Changed the mouse pointer to a crosshair while on the main content of the page, otherwise cursor.</br>
 -> [7] Added Favicon for each page</br>
 -> Replaced old data and added new data in the resume section</br>
+-> Centered Initial on homepage
+-> Added first blogpost
+-> Fixed resume box overlap bug
