@@ -53,9 +53,13 @@ div{
     border: 2px grey dotted;
     padding: 5px;
     margin-bottom: 5px;
-    font-size: 20px;
     font-weight: 600;
 }
+
+a {
+    font-weight: 100;
+}
+
 form > button:hover{
     background-color: black;
     color: white;
