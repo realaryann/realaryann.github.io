@@ -73,12 +73,9 @@ h1{
     letter-spacing: 10px;
     font-size: 50px;
     font-weight: 800;
-    border: 2px grey dotted;
-    border-radius: 2px;
 }
 .about{
     letter-spacing: 2px;
     font-size: 30px;
-    border: 2px grey dotted;
     border-radius: 2px;
 }
