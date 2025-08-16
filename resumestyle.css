@@ -22,8 +22,8 @@ h2{
     text-decoration: black underline ;
 }
 form > button{
-    height: 30px;
-    width: 150px;
+    height: 50px;
+    width: 200px;
     font-size: 20px;
     font-weight: 600;
     border: 2px black solid;
@@ -73,7 +73,7 @@ div > div{
 }
 #experience{
     display: inline-block;
-    width: 50%;
+    width: 90%;
     height: 60%;
 }
 #education{

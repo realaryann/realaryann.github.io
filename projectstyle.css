@@ -66,8 +66,8 @@ form > button:hover{
     cursor: pointer;
 }
 form > button{
-    height: 30px;
-    width: 150px;
+    height: 50px;
+    width: 200px;
     font-size: 20px;
     font-weight: 600;
     border: 2px black solid;
