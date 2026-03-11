@@ -22,11 +22,13 @@
         <section>
             <h2>About</h2>
             <p class="about-text">
-                I build scalable, high-performance applications and APIs. Currently focused on distributed systems and creating low-latency applications. I like to solve complex technical challenges.
-
+                I build scalable, high-performance applications and APIs. Currently focused on distributed systems and creating low-latency applications. I like to solve complex technical challenges.<br><br>
+                Some enjoyable books: <br>
+                • Designing Data Intensive Applications <br>
+                • Operating Systems: Three Easy Pieces <br>
+                • TCP/IP Illustrated Vol. 1 
             </p>
-            
-
+        
         </section>
 
         <section>
@@ -99,40 +101,56 @@
         </section>
 
         <section>
-            <h2>Projects</h2>
+            <h2>Personal Projects</h2>
             <div class="grid">
                 
                 <article class="card">
-                    <h3 class="card-title">Distributed Cache API</h3>
-                    <p class="card-desc">A highly available, distributed in-memory caching system built from scratch to reduce database load by 40%.</p>
+                    <h3 class="card-title">KeyStore: Redis Server Implementation</h3>
+                    <p class="card-desc">• Designed a concurrent Redis TCP server with a custom communication protocol operable with Redis clients <br>
+                    • Achieved a throughput of 430,000 writes/sec and 460,000 reads/sec using TCP pipelining</p>
                     <div class="tags">
                         <span class="tag">Go</span>
-                        <span class="tag">gRPC</span>
+                        <span class="tag">TCP/IP</span>
                         <span class="tag">Docker</span>
+                        <span class="tag">Concurrency</span>
                     </div>
                     <div class="card-links">
-                        <a href="#">Source Code</a>
-                        <a href="#">Read Case Study</a>
+                        <a href="https://github.com/realaryann/keystore">Source Code</a>
                     </div>
                 </article>
 
                 <article class="card">
-                    <h3 class="card-title">Fintech Analytics Dashboard</h3>
-                    <p class="card-desc">Real-time data visualization platform processing thousands of transactions per second for financial advisors.</p>
+                    <h3 class="card-title">FireKu: Fire TV and Roku Remote</h3>
+                    <p class="card-desc">• Created a web based Fire TV and Roku remote using Flask, ADB, and Roku RESTful API<br>
+• Handled multiple IPv4 edges cases discovered via AI and Jenkins based regression testing </p>
                     <div class="tags">
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">React</span>
-                        <span class="tag">Node.js</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">UDP</span>
+                        <span class="tag">REST API</span>
                     </div>
                     <div class="card-links">
-                        <a href="#">Live Demo</a>
-                        <a href="#">Source Code</a>
+                        <a href="https://github.com/realaryann/fireku">Source Code</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h3 class="card-title">Pace-Man: A Pac-Man clone</h3>
+                    <p class="card-desc">• Developed an open-source Pac-Man clone game using C++, available for download via GitHub <br>
+• Implemented game environment and efficient movement algorithms for each ghost based on player location</p>
+                    <div class="tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">SFML</span>
+                        <span class="tag">Object Oriented Programming</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://github.com/realaryann/Pace-Man">Source Code</a>
                     </div>
                 </article>
 
             </div>
         </section>
-
+        <!--
         <section>
             <h2>Recent Writing</h2>
             <div class="grid">
@@ -157,9 +175,10 @@
 
             </div>
         </section>
+        -->
 
         <footer>
-            <p>&copy; <span id="current-year"></span> Jane Doe. Built with HTML, CSS & JS.</p>
+            <p>&copy; <span id="current-year"></span> Aryan Nagpal. Built with HTML, CSS & JS.</p>
         </footer>
     </div>
 
