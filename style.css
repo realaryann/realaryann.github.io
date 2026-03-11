@@ -1,0 +1,231 @@
+/* CSS Variables for Dark Theme */
+:root {
+    --bg-color: #111827;       
+    --text-main: #f3f4f6;      
+    --text-muted: #9ca3af;     
+    --card-bg: #1f2937;        
+    --accent: #60a5fa;         
+    --border-color: #374151;   
+}
+
+/* Base Reset & Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* Layout Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header / Hero Section */
+header {
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.05rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.social-links a {
+    margin-right: 1.5rem;
+    font-weight: 500;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 4rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+.about-text {
+    color: var(--text-muted);
+}
+
+/* Experience Timeline */
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.experience-item {
+    border-left: 2px solid var(--border-color);
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+/* Timeline dot */
+.experience-item::before {
+    content: '';
+    position: absolute;
+    left: -7px; /* Centers the 12px dot on the 2px border */
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--accent);
+    box-shadow: 0 0 0 4px var(--bg-color); /* Creates a cutout effect */
+}
+
+.experience-header {
+    margin-bottom: 0.5rem;
+}
+
+.role {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 0.25rem;
+}
+
+.experience-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+}
+
+.company {
+    font-weight: 500;
+    color: var(--accent);
+}
+
+.date {
+    color: var(--text-muted);
+}
+
+.experience-desc {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Grid & Cards (Used for Projects & Blog) */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.card-desc {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+/* Tags for Tech Stack */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tag {
+    background-color: var(--bg-color);
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    border: 1px solid var(--border-color);
+}
+
+.card-links {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Blog Specific */
+.blog-date {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+    font-family: monospace; /* Gives a nice technical feel to the date */
+}
+
+/* Footer */
+footer {
+    margin-top: 5rem;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 1.5rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .experience-meta {
+        gap: 0.5rem;
+        flex-direction: column;
+    }
+}

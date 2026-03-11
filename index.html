@@ -2,50 +2,167 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="homestyle.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+    <title>Software Engineer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="boxer">
-        <div id="version">v3.0</div>
-        <nav>
-            <br>
-            <form action="about.html">
-            <button>👓about me</button>
-            </form>
-            <form action="resume.html">
-            <button>📝experience</button>
-            </form>
-            <form action="projects.html">
-            <button>⚙️projects</button>
-            </form>
-            <form action="blog.html">
-                <button>🖋️blog</button>
-            </form>
-            <a href ="https://github.com/realaryann">🐙Github</a>
-            <a href = "https://www.linkedin.com/in/aryan-nagpal-ab1237235/">🔗Linkedin</a>
-        </nav>
-        <h1>Aryan Nagpal</h1>
-        <hr>
-        <br>
-        <h2 class="about">Website for my experience, blog, and projects 🖥️</h2>
-        <hr>
-        <div>
-            <p class="homeabout">
-                Software Engineer interested in TCP/IP, hardware protocols (SPI/I2C/UART), operating systems, computer architecture, and creating scalable software
+
+    <div class="container">
+        <header>
+            <h1>Aryan Nagpal</h1>
+            <p class="subtitle">Specializing in Distributed Computing, Networking, and Infrastructure</p>
+            <div class="social-links">
+                <a href="mailto:hello@example.com">Email</a>
+                <a href="https://github.com/realaryann" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/arynagpal/" target="_blank">LinkedIn</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>About</h2>
+            <p class="about-text">
+                I build scalable, high-performance applications and APIs. Currently focused on distributed systems and creating low-latency applications. I like to solve complex technical challenges.
+
             </p>
-            <hr>
-            <p class="homeabout">
-                Books I am currently reading!:<br><br>
-                • Designing Data Intensive Applications<br>
-                • Operating Systems: Three Easy Pieces<br>
-                • TCP/IP Illustrated Vol. 1
-            </p>
-        </div>
-    <hr>
+            
+
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+            <div class="experience-list">
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3 class="role">Software Engineer Co-op</h3>
+                        <div class="experience-meta">
+                            <span class="company">Cisco</span>
+                            <span class="date">Jan 2025 &mdash; Aug 2025</span>
+                        </div>
+                    </div>
+                    <p class="experience-desc">• Engineered a next generation device testing platform for ASIC transceivers using Python and Robot Framework <br>
+                        • Improved efficiency of PCBA testing by optimizing Python code, achieving a 30% reduction in testing time <br>
+                        • Collaborated with software and operations teams, delivering 150+ Git and Perforce commits <br>
+                        • Created an end-to-end Jenkins pipeline for nightly regression testing, improving production code reliability <br>
+                        • Implemented embedded validation tests in Python to verify SPI, I2C, and UART data transactions 
+                    </p>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3 class="role">Robotics Research Intern</h3>
+                        <div class="experience-meta">
+                            <span class="company">Human-Robot Interaction Lab, UMass Lowell</span>
+                            <span class="date">May 2024 &mdash; Dec 2024</span>
+                        </div>
+                    </div>
+                    <p class="experience-desc">
+                        • Implemented voice assistance for robots by creating pipelines for recording, transcribing, and operating on live audio <br>
+                        • Engineered a Python package to convert speech-to-text using Vosk API, NumPy, SciPy, and Bash <br>
+                        • Modified File I/O data transfer to a Pub-Sub model, improving package latency by 80% <br>
+                        • Migrated ROS C++ codebase for Hubo robot to ROS2 in Git feature branch, saving development time 
+                    </p>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3 class="role">Computer Science Tutor</h3>
+                        <div class="experience-meta">
+                            <span class="company">UMass Lowell</span>
+                            <span class="date">Jan 2024 &mdash; Sept 2024</span>
+                        </div>
+                    </div>
+                    <p class="experience-desc">
+                        • Instructed students about technical concepts of data structures and graphical program design using C and C++<br>
+                        • Managed 7+ tutees at once, reviewed C/C++ code, taught debugging and logic building techniques<br>
+                        • Solved problems regarding initializing and working with data structures, focusing on time and space complexity
+                    </p>
+                </div>
+
+                 <div class="experience-item">
+                    <div class="experience-header">
+                        <h3 class="role">Computer Science Grader</h3>
+                        <div class="experience-meta">
+                            <span class="company">UMass Lowell</span>
+                            <span class="date">Sept 2023 &mdash; Current (Seasonal, Semester Based)</span>
+                        </div>
+                    </div>
+                    <p class="experience-desc">
+                        • Strengthened debugging and code review skills by evaluating submissions from 100+ students <br>
+                        • Evaluated programming assignments and reviewed functionality of code by writing extensive unit tests <br>
+                        • Provided relevant feedback on coding assignments that resulted in about an 80% successful re-submission rate 
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div class="grid">
+                
+                <article class="card">
+                    <h3 class="card-title">Distributed Cache API</h3>
+                    <p class="card-desc">A highly available, distributed in-memory caching system built from scratch to reduce database load by 40%.</p>
+                    <div class="tags">
+                        <span class="tag">Go</span>
+                        <span class="tag">gRPC</span>
+                        <span class="tag">Docker</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="#">Source Code</a>
+                        <a href="#">Read Case Study</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h3 class="card-title">Fintech Analytics Dashboard</h3>
+                    <p class="card-desc">Real-time data visualization platform processing thousands of transactions per second for financial advisors.</p>
+                    <div class="tags">
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="#">Live Demo</a>
+                        <a href="#">Source Code</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Recent Writing</h2>
+            <div class="grid">
+                
+                <article class="card">
+                    <span class="blog-date">October 12, 2025</span>
+                    <h3 class="card-title">Optimizing PostgreSQL Queries at Scale</h3>
+                    <p class="card-desc">A deep dive into indexing strategies and query planning when handling tables with hundreds of millions of rows.</p>
+                    <div class="card-links">
+                        <a href="#">Read Article &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <span class="blog-date">August 04, 2025</span>
+                    <h3 class="card-title">Why I Switched from REST to gRPC</h3>
+                    <p class="card-desc">Exploring the performance benefits, strict typing, and developer experience of adopting gRPC for internal microservices.</p>
+                    <div class="card-links">
+                        <a href="#">Read Article &rarr;</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; <span id="current-year"></span> Jane Doe. Built with HTML, CSS & JS.</p>
+        </footer>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
