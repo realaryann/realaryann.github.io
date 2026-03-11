@@ -2,8 +2,9 @@
 :root {
     --bg-color: #111827;       
     --text-main: #f3f4f6;      
-    --text-muted: #9ca3af;     
+    --text-muted: #c9cdd4;     
     --card-bg: #1f2937;        
+    --inner-card-bg: #111827; /* New: Make inner cards match the body background for a "cutout" look */
     --accent: #60a5fa;         
     --border-color: #374151;   
 }
@@ -37,6 +38,13 @@ a:hover {
 .container {
     max-width: 900px;
     margin: 0 auto;
+    
+    /* New Card Styles for the Container */
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 3rem; /* Ample breathing room inside the main card */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 /* Header / Hero Section */
@@ -52,6 +60,20 @@ h1 {
     margin-bottom: 0.5rem;
 }
 
+.inline-icon {
+    width: 20px;           
+    height: 20px;
+    object-fit: contain;   
+    border-radius: 4px;    
+}
+
+.company-logo {
+    width: 36px;         /* Increased from 20px */
+    height: 36px;        /* Increased from 20px */
+    object-fit: contain; 
+    border-radius: 6px;  /* Slightly round the corners */
+}
+
 .subtitle {
     font-size: 1.25rem;
     color: var(--text-muted);
@@ -61,6 +83,9 @@ h1 {
 .social-links a {
     margin-right: 1.5rem;
     font-weight: 500;
+    display: inline-flex;  /* New */
+    align-items: center;   /* New: centers icon vertically with text */
+    gap: 0.4rem;           /* New: adds a small space between icon and text */
 }
 
 /* Section Styling */
@@ -120,6 +145,7 @@ h2 {
 .experience-meta {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 1rem;
     font-size: 0.95rem;
     margin-bottom: 0.75rem;
@@ -128,6 +154,9 @@ h2 {
 .company {
     font-weight: 500;
     color: var(--accent);
+    display: inline-flex;  
+    align-items: center;   
+    gap: 0.75rem;        /* Increased gap so text isn't crowded */
 }
 
 .date {
@@ -147,7 +176,7 @@ h2 {
 }
 
 .card {
-    background-color: var(--card-bg);
+    background-color: var(--inner-card-bg); /* Updated line */
     border: 1px solid var(--border-color);
     border-radius: 12px;
     padding: 1.5rem;
@@ -217,9 +246,14 @@ footer {
 }
 
 /* Responsive */
+
 @media (max-width: 600px) {
     body {
-        padding: 1.5rem;
+        padding: 1rem; /* Reduce outer body padding */
+    }
+    .container {
+        padding: 1.5rem; /* Reduce inner container padding */
+        border-radius: 12px;
     }
     h1 {
         font-size: 2rem;
